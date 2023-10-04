@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Operator</title>
+</head>
+
+<body>
+    <script>
+
+        // Types of Operators
+
+        // 1. Arithmetic operators
+        // 2. Assignment operators
+        // 3. Comparison operators
+        // 4. Logical operators
+        // 5. Bitwise operators
+
+// 1. Arithmetic operator:
+
+        let number1 = 5;
+        let number2 = 20;
+        console.log(number1 + number2); //output :25
+        console.log(number1 - number2); //output :-15
+        console.log(number1 * number2); //output :100
+        console.log(number1 / number2); //output :0.25
+        console.log(number1 % number2); //output :5
+
+        // Increment:(++) x = x+1
+
+        let a = 10;
+        // let b = 1;
+        console.log(a);      // a = 10, ans =10
+        console.log(++a);    // a = 10, ans =11
+        console.log(a++);    // a = 11, ans =11
+        console.log(a++);    // a = 11, ans =12
+
+        // Decrement:(--) x = x-1
+
+        let b = 10;
+        console.log(b);      // b = 10, ans =10
+        console.log(--b);    // b = 10, ans =9
+        console.log(b--);    // b = 9,  ans =9
+        console.log(b--);    // b = 9,  ans =8
+
+// ---------------------------------------------------------------------------------------------------
+
+// 2. Assignment operator : +=, -=, *=, /= assign a value to variable
+
+        let x = 10;
+        let y = 10;
+        let z = 10;
+        x += 5;
+        y -= 2;
+        z *= 2;
+        console.log(x);
+        console.log(y);
+        console.log(z);
+
+// -----------------------------------------------------------------------------------------------
+
+// 3. Comparison operator: (x > y);
+                   /* Note: Comparison operators produces 
+                             boolean(true ,false ) as a result. */
+
+        let A=6;
+        let B=5;
+        let c=10;
+        
+        // Relational operators:
+        console.log(A < 5); // 6 < 5 , its a false,
+        console.log(B <=5); // 5 <= 5, its a true,
+        console.log(c >=5); // 10 >=5, its a true.
+
+        // Equality operators:
+
+        let D=10;
+        console.log( D === 10); // 10 === 10, its a true, Equalto
+        console.log( D !== 10); // 10 !== 10, its a false. NotEqualto
+
+        // strict Equality operator: (Same Datatype + SameValue)
+        console.log(1 === 1);  // number === number, true
+        console.log('1' === 1); // string === number, false
+
+        // Lose Equality operator: 
+        console.log(1 == 1);   // true,
+        console.log('1' == 1); // true
+
+        
+        // String comparison: //dictionary
+        let name = "alen";
+        let name1 = "anbu";
+        console.log( name > name1); // its a true 
+
+        /* a - a 
+           l - n
+        */
+
+// -----------------------------------------------------------------------------------------
+
+//4. Logical operator:
+      
+     // Logical And (&&)
+          // returns TRUE if both operands are TRUE 
+
+        console.log(true && true); // its a true,
+        console.log(true && false); // its a false
+
+     //Logical OR(||)   
+        // returns TRUE if anyone operands are TRUE
+
+        console.log(false || true); //its a true
+
+     //Logical NOT(!) true = false , false=true
+        
+        console.log(!true);   // false
+        console.log(!false) ; // true
+
+
+    // LoanApplication:
+         // requirements: Highincome, CIBILscore , Loan eligible, ineligible
+
+
+     let Highincome = true;
+     let CIBILscore = false;
+     let loan_EligiblePerson = Highincome || CIBILscore;
+     let loan_Application = loan_EligiblePerson;
+
+     console.log( Highincome && CIBILscore); // its a false
+     console.log( Highincome || CIBILscore); // its a true
+     console.log( " Status: " + loan_EligiblePerson); // its a true
+     console.log( " loan Status: " + loan_Application); // its a true
+
+// -----------------------------------------------------------------------------------------------
+
+// 5. Bitwise operator: (0,1)
+    
+    //  Human code -> Machine code
+    
+    // 1 -> 00000001 = 1
+    // 2 -> 00000010 = 2 
+    // 3 -> 00000011 = 3
+
+    // 1. Bitwise OR ( | )
+    // 2. Bitwise AND ( & )
+
+    console.log(1|2); // | Bitwise OR  , if anyone true          // result = 3
+    console.log(1&2); // & Bitwise AND , both operands are true  // result = 0
+
+    // Permission application:
+
+    /* W -> 00000100 -> write,  4
+       R -> 00000010 -> Read,   2
+       E -> 00000001 -> Execute, 1
+       */
+
+     const readPermission = 4;
+     const writePermission = 2;
+     const ExecutePermission = 1;
+
+     let myPermission = 0;
+     
+     myPermission = myPermission | writePermission ;
+     let message = (myPermission & readPermission) ? 'Yes' : 'No';
+     
+     console.log(message);
+
+     
+    //  output : Yes
+
+
+    // Precedence Operator:
+
+   //Normal addition method: 
+    let X = 5 + 5;
+    console.log(X);
+
+    let Y = 2 + 5 * 10;  // 2 + ( 5 * 10 ) = 52
+    console.log(Y);
+
+    let Z = ( 2 + 5) * 10; // ( 2 + 5 ) * 10 = 70
+    console.log(Z);
+
+
+
+
+
+
+   
+       
+
+    </script>
+
+</body>
+
+</html>

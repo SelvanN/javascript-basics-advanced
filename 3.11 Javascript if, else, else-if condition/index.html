@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>if-Else condition</title>
+</head>
+
+<body>
+    <script>
+        // Condition Statements:
+
+        // 1. if-else Statement
+        // 2. else-if Statement
+
+
+        // 1. if Statement: 
+        //note:  u should must use lowercase letter(if),  (IF) using  uppercase letter is showing error.
+
+        // let condition = 'true';
+        // if (condition)
+        //     console.log('Condition : True');
+
+        // else Statement:
+
+        let condition1 = 'true';
+        if (condition1) {
+            console.log('Condition : True');
+        }
+        else {
+            console.log('Condition : false');
+        }
+
+
+
+        // eg: weather condition
+
+        let weather = 'cold';
+        if (weather === 'hot') {
+            console.log('weather is very hot');
+        }
+
+        else {
+            console.log('weather is cold');
+        }
+
+
+        // eg: Rainny condition
+
+        let isRaining = true;
+        let isCouldy = false;
+        if (isCouldy || isRaining) {
+            console.log("Don't forget to take umberlla!")
+        }
+        else {
+            console.log("Sky is normal!,Enjoy the weather")
+        }
+
+
+        // eg: Date & Time Calculation condition
+
+        //  if hours in between 12aa(0) to 1pm(13) -> "good morning"
+        //  else-if hours in between 1pm(13) to 5pm(17) -> "good afternoon"
+        //  else hours in between 5pm(17) to 12am(0) -> "good evening"
+
+        // normal method
+        let hour = 15;
+        if (hour >= 0 && hour <= 13) {
+            console.log("Good Morning");
+        }
+        else if (hour >= 13 && hour <= 17) {
+            console.log("Good Afternoon");
+        }
+        else {
+            console.log("Good Evening");
+        }
+
+        // efficient method
+
+        let hours = new Date().getHours();
+        console.log(hours);
+        if (hours >= 0 && hours <= 13) {
+            console.log("Good Morning");
+        }
+        else if (hours >= 13 && hours <= 17) {
+            console.log("Good Afternoon");
+        }
+        else {
+            console.log("Good Evening");
+        }
+
+
+
+
+
+
+
+
+
+    </script>
+</body>
+
+</html>

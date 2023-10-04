@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+    // 5. Object Datatype: use curly Brackets{};
+      
+    //  Normal method:    
+        let name2 = "Tamilselvan";
+        let dob = 12/3/1999;
+        let gender ="male";
+        let address = 'Ranipet, Tamilnadu, India';
+        
+    // Using Object method:
+  
+        let person = {
+          name1 :"Tamilselvan",
+          dob : 12/3/1999,
+          age : 22,
+          gender : "male",
+          address : 'Ranipet, Tamilnadu, India',
+          sibling : {
+                  brother : "subash",
+                  sister  : "abinaya",
+          }        // Subobject
+        };        
+        person.age =24;  //using (.)dot u can change & modified your values.
+        console.log(person);
+  
+        // Dot Notation(.)
+           console.log(person.gender);  //Output is : male
+           console.log(person.name1);   //Output is : Tamilselvan
+           console.log(person.age);     //Output is :  24
+          
+        // Bracket Notation(.)
+           console.log(person['gender']);  //Output is : male
+           console.log(person['name1']);   //Output is : Tamilselvan
+           console.log(person['age']);     //Output is :  24
+        
+        // Subobject Dot Notation(.)
+           console.log(person.sibling);
+           console.log(person.sibling.brother) //output is : subash
+           </script>
+</body>
+</html>

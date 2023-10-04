@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>tips</title>
+</head>
+<body>
+    <script>
+// Arrow function / anonymous function
+
+let number = [10, 20, 30, 40, 50] //do with simple code & get ans like - 11,21,31,41,51
+let newValue = number.map((x) => (x+1));
+console.log(newValue);
+  
+// output: using .map function
+// 11, 21, 31, 41, 51
+
+// -------------------------------------------
+
+let name = "selva";
+console.log("hi, my name is "+ name +" i'm 24 ");
+console.log(`hi, my name is ${name} i'm 24`)
+console.log(`hi, my age is ${45}`)
+
+// note: using tilde symbol syntax=(` ${} `) to write simple code ;
+
+// -----------------------------------------------------
+// semicolon:
+// 1. without semicolon code will be execute
+let age = 23
+console.log(age)
+
+// 2. using semicolon also code will be execute
+let Age = 23;
+console.log(Age);
+
+// 3. But sometimes u can write a like same line,
+//     on that time your  compulsory use the semicolon .
+
+let AGE = 23; console.log(AGE);
+
+
+// date and time:
+
+
+const date = new Date();
+let day = date.getDate();
+let month = date.getMonth() +1;
+let year = date.getFullYear();
+
+
+let currentDate = `${day}-${month}-${year}`;
+console.log(currentDate);
+
+
+// const date = new Date();
+
+// let day = date.getDate();
+// let month = date.getMonth() + 1;
+// let year = date.getFullYear();
+
+// // This arrangement can be altered based on how we want the date's format to appear.
+// let currentDate = `${day}-${month}-${year}`;
+// console.log(currentDate); // "17-6-2022"
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    </script>
+</body>
+</html>

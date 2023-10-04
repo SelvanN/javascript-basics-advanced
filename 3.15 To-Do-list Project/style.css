@@ -1,0 +1,21 @@
+body{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items:center;
+    text-align: center;
+
+}
+
+h1{
+    font-size: 40px;
+    color: brown;
+}
+
+h3, li{
+    margin-right: 150px;
+}
+ input, button{
+    padding: 5px 10px;
+    
+}

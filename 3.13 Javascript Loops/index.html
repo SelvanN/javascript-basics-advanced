@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Loops</title>
+</head>
+
+<body>
+    <script>
+        //  Javascript Loops:
+
+        /* 1. For loop
+           2. While loop
+           3. Do While loop
+           4. For-in loop
+           5. For-of loop     
+         */
+
+
+ // 1. For loop:
+
+        // Normal method:
+        console.log("Normal Number # 1");
+        console.log("Normal Number # 2");
+        console.log("Normal Number # 3");
+        console.log("Normal Number # 4");
+        console.log("Normal Number # 5");
+
+        // syntax:
+
+        /*         
+        for(initialExpression; condition; IncrementExpression(i++(if u not mentioned its infinity)))
+        
+        {
+            console.log("Number #1");
+        }          
+        */
+        for (let i = 0; i <= 5; i++) {
+            console.log("Number # " + i);
+        }
+
+        // Odd Number:
+        for (let i = 0; i <= 5; i++) {
+            if (i % 2 !== 0) {
+                console.log("Odd Number # " + i);
+            }
+        }
+
+        // Odd Number reverse:
+        for (let i = 10; i >= 1; i--) {
+            if (i % 2 !== 0) {
+                console.log("Odd Number reverse # " + i);
+            }
+        }
+
+
+        // Even Number :
+        for (let i = 10; i >= 1; i--) {
+            if (i % 2 == 0) {
+                console.log("Even Number # " + i);
+            }
+        }
+
+
+// 2. While loop:
+        for (let i = 5; i >= 1; i--) {
+            if (i % 2 !== 0) {
+                console.log("forloop " + i)
+            }
+        }
+
+        // while 
+        let i = 20;
+        while (i >= 1) {
+            if (i % 2 !== 0) {
+                console.log("whileloop " + i)
+            }
+            i--;
+
+        }
+
+// 3. do-while:
+
+        let I=1;
+        do{
+            if (I % 2 == 0) {
+                console.log("do-whileloop " + I);
+            }
+            I++;   
+        }
+        while(I <= 10);
+
+
+
+
+
+
+    </script>
+</body>
+
+</html>

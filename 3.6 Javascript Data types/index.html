@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+// Javascript Datatypes: 
+// Primitive datatypes: String, Integer/Number, Boolean, Undefined, null.
+// Reference datatypes: Object, Array, Function
+
+// Data types: most commanly used datatypes 
+
+// 1. Numbers
+// 2. Strings
+// 3. Boolean eg: True or false
+// 4. Arrays
+// 5. Objects
+// 6. Functions
+
+
+//Datatypes: 
+
+// 1. Numbers Datatypes:       
+
+        var no1 = 50;  //Number/Integer
+        let age = 30;
+        alert(no1 + age);
+ /*Note:
+      1. to specify number without using Single or Double quotes,
+      2. single or double qoutes or not mandatory to use,thats your wish  */
+
+// 2. Strings Datatypes: 
+
+        var name = "selva"; //Strings
+        let lang = 'english';
+        alert(lang);
+/* Note:
+      1.to specify using Single or Double quotes.*/
+
+
+// 3. Boolean Datatype:  true or false / yes or no
+       
+       var number = (10 > 9);
+       alert(number);   //output is : true
+       let number1 = (10 < 9);
+       alert(number1);  //output is : false
+  
+      
+// 4. Arrays Datatypes:
+           
+        var bikes = [ "ktm" ,  ' yamaha ' , " royal enfield " ];
+        var cars = [ "audi" , ' BMW' , " Benz", 'minicooper' ];
+        var numbers =[33, 65, 23 ,"welcome",98, 'hello']
+        alert(cars);
+        alert(bikes);
+
+  /* Note:
+        1. using to declare/specify brackets []
+        2. Arrays positions - 0,1,2,3,4,5 .... (starts with 0) */
+
+//  Arrays positions - 0,1,2,3,4,5 .... (starts with 0)
+
+        alert(cars[0]);  // output is : audi
+        alert(bikes[2]); // output is : Benz
+
+// arrays = number and string both are accept
+        alert(numbers);
+        alert(numbers[3]); //output is : welcome
+
+// arrays key funtions.
+
+        var bikes = [ "ktm" ,  ' yamaha ' , " royal enfield " ];
+        var cars2 = [ "audi" , ' BMW' , " Benz", 'minicooper' ];
+        alert(cars2); 
+        cars2.push("landrover");
+        alert(cars2.length);
+
+        //push function : use to add more value in arrays 
+
+        // syntax:
+        //  variable name (.) dot Operator (value);  to add a value
+
+
+ // 5. Object Datatype:
+      
+  //  Normal method:    
+      let name2 = "Tamilselvan";
+      let dob = 12/3/1999;
+      let gender ="male";
+      let address = 'Ranipet, Tamilnadu, India';
+      
+  // Using Object method:
+
+      let person = {
+        name1 :"Tamilselvan",
+        dob : 12/3/1999,
+        age : 22,
+        gender : "male",
+        address : 'Ranipet, Tamilnadu, India',
+        sibling : {
+                brother : "subash",
+                sister  : "abinaya",
+        }        // Subobject
+      };        
+      person.age =24;  //using (.)dot u can change & modified your values.
+      console.log(person);
+
+      // Dot Notation(.)
+         console.log(person.gender);  //Output is : male
+         console.log(person.name1);   //Output is : Tamilselvan
+         console.log(person.age);     //Output is :  24
+        
+      // Bracket Notation(.)
+         console.log(person['gender']);  //Output is : male
+         console.log(person['name1']);   //Output is : Tamilselvan
+         console.log(person['age']);     //Output is :  24
+      
+      // Subobject Dot Notation(.)
+         console.log(person.sibling);
+         console.log(person.sibling.brother) //output is : subash
+
+
+// 6. Function Datatype: use parentheses or rounded bracket ();
+
+        // Normal method:
+
+        let name = "selva";
+        let age1= 25;
+        let msg = "Hi I'm " + name + " , " + age1 + " welcome to my website";
+        console.log(msg);
+
+        // Function method:
+ 
+        1.
+        function greetUser(name, age) {
+            // let name = "selva";
+            // let age = 25;
+            // let msg = "Hi I'm " + name + " " + age + " welcome to my website";
+            console.log("Hi I'm " + name + " " + age + " welcome to my website");
+        }
+        greetUser("selva", 25);
+        greetUser("Harish", 100);
+
+        2.
+        function add(number1, number2) {
+            // let add = number1 + number2;
+            console.log(number1 + number2);
+            console.log(number1 * number2);
+        }
+        add(10, 50);
+        add(20, 80);
+        add(5, 5)
+
+        3.
+        function loveproposal(name){
+            console.log("i love you "+ name +" ");
+        }
+        loveproposal("Hemavathy");
+
+    </script>
+</body>
+
+</html>

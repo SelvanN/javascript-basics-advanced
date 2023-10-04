@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Switch-Case</title>
+</head>
+
+<body>
+    <script>
+        // Switch-Case:
+
+        // syntax:
+
+        /*
+        switch (condition) {
+            case 1:
+                console.log(1);
+                   break;
+            case 2:
+                console.log(2);
+                break;
+            case 3:
+                console.log(3);
+                break;
+            default:
+                console.log("Default Behaviour");
+        }
+        */
+
+
+        // Grade condition:
+
+        /* S- super grade
+           A - excellent grade
+           B - average grade
+           E - just pass!
+           U - Failed grade*/
+
+
+        let grade = "E";
+        switch (grade) {
+            case "S":
+                console.log("Super Grade");
+                break;
+            case "A":
+            case "B":
+                console.log("excellent grade");
+                break;
+            case "E":
+                console.log("Just pass");
+                break;
+            case "U":
+                console.log("Failed grade");
+                break;
+            default:
+                console.log("Unknown grade");
+        }
+
+
+        // Marks Condition:
+
+        let marks = 60;
+        switch (true) {
+            case (marks >= 90):
+                console.log("Super grade");
+                break;
+            case (marks >= 50):
+                console.log("Pass");
+                break;
+            case (marks < 50):
+                console.log("Failed");
+                break;
+            default:
+                console.log(" Unknown grade");
+        }
+
+
+        // Mobile buying suggestion:
+
+        /* conditions;
+
+        1. if given saving amount is > 10k , Buy android mobile,
+        2. else-if given amount is > 60k, Buy iphone moblie,
+        3. else-if given amount is > 5k to 10k , Buy Basic mobile,
+        4. else print "You can't afford mobile now!".
+        */
+
+
+        let Mobile_price = '09k';
+
+        if (Mobile_price >= "60k") {
+            console.log("Buy iphone mobile");
+        }
+        else if (Mobile_price >="20K"){
+            console.log("Buy android mobile");
+        }
+        else if (Mobile_price <='10K'){
+            console.log("Buy Basic mobile");
+        }
+        else{
+            console.log("You can't afford mobile now!");
+        }          
+    </script>
+</body>
+
+</html>
